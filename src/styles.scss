@@ -1,0 +1,50 @@
+// global deside
+@import 'app/global.scss';
+
+
+/* You can add global styles to this file, and also import other style files */
+
+body, html{
+  font-family: "Ubuntu", sans-serif;
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+p{
+  font-family: "roboto";
+}
+body {
+  background: linear-gradient(to bottom, #feeef0 50%, #a6c1ee12 100%);
+  background-color: #abc3ed21;
+  margin: 0;
+  height: 100%;
+    background-attachment: fixed;
+  padding: 0;
+}
+.primary_button {
+  font-size: 1.4rem;
+  color: white;
+  background: $accent-color;
+  padding: 13px 25px;
+  border-radius: 50px;
+  font-family: roboto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  letter-spacing: 0.5px;
+  border: 0;
+}
+.seconday_button {
+  font-size: 1.4rem;
+  color: $primary-color;
+  background: $bg-light;
+  padding: 13px 25px;
+  border-radius: 50px;
+  font-family: roboto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  letter-spacing: 0.5px;
+  border: 0;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}

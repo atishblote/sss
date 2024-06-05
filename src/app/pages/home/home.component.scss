@@ -1,0 +1,291 @@
+@import "../../global.scss";
+.after_header {
+  text-align: center;
+  padding: 15px;
+  color: white;
+  background-color: $primary-color;
+  border-radius: 0 0 50px 50px;
+
+  marquee {
+    background: #ffca28;
+    color: black;
+    padding: 6px;
+  }
+}
+.live_update {
+  margin: 40px 0;
+
+  .container {
+    border: 2px solid #9759c4;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .h2 {
+    text-align: center;
+    padding: 6px;
+    color: white;
+    border-radius: 0px;
+    background-color: $accent-color;
+    margin: 0;
+  }
+  p {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .p_3 {
+    padding: 0 2.2rem;
+  }
+
+  .live_items {
+    padding: 14px;
+    background: $bg-light;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: $box-shadow;
+  }
+  .number,
+  .table_row p {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 21px;
+  }
+  .bazaar_title {
+    text-align: center;
+    font-size: 1.4rem;
+    color: $accent-color;
+    font-weight: 600;
+  }
+}
+
+// noticeboard
+.notice_board {
+  height: 32vh;
+  background-size: cover;
+  border-radius: 20px;
+  // margin: 2px;
+  .h3 {
+    text-align: center;
+    padding: 0 10px;
+  }
+  .inner_div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Ubuntu";
+  }
+  a.primary_button {
+    text-decoration: none;
+    line-height: 1;
+    font-size: 1.2rem;
+  }
+}
+
+.news_board .inner_div {
+  padding: 5px;
+  background: #ffffff;
+  border-radius: 20px;
+  margin-top: 21px;
+  text-align: center;
+  border: 2px solid $accent-color;
+}
+.bazar_timing {
+  margin: 40px 0;
+  .container {
+    border: 2px solid #9759c4;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .h2 {
+    text-align: center;
+    padding: 6px;
+    color: white;
+    border-radius: 0px;
+    background-color: $accent-color;
+    margin: 0;
+  }
+  button {
+    font-size: 0.8rem;
+    padding: 8px 15px;
+    cursor: pointer;
+  }
+  p {
+    text-align: center;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    justify-content: space-between;
+    align-items: center;
+
+    .col_2,
+    .col_6 {
+      text-align: center;
+    }
+  }
+
+  .live_items {
+    padding: 10px;
+    margin: 11px 50px;
+    border-radius: 10px;
+    box-shadow: $box-shadow;
+    /* margin-top: 10px; */
+    .bazaar_title {
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+    .number {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin: 10px 0px;
+      color: $accent-color;
+    }
+  }
+  .bg_light {
+    background: $bg-light;
+  }
+  .highilited {
+    background: $accent-color;
+    color: white;
+
+    button {
+      background-color: $bg-light;
+      color: black;
+    }
+    .number {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin: 10px 0px;
+      color: $primary-color;
+    }
+  }
+}
+
+// sarline
+.starline_section {
+  .container {
+    border: 2px solid #9759c4;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .h2 {
+    text-align: center;
+    padding: 6px;
+    color: white;
+    border-radius: 0px;
+    background-color: #9759c4;
+    margin: 0;
+  }
+}
+
+// login
+.login_section{
+    height: auto;
+    padding-bottom: 20px;
+     .h3 {
+        font-size: 1.4rem;
+        padding: 0px;
+    }
+    .seconday_button {
+        text-decoration: none;
+        line-height: 1;
+        font-size: 1.2rem;
+    }
+   
+}
+
+
+
+// about us
+.about_us{
+    padding: 20px;
+
+    .container{
+        background-color: $bg-light;
+    }
+    p {
+        border-bottom: 1px solid gray;
+        background: $bg-light;
+        padding: 12px 10px;
+    }
+    .let-rock {
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .let-rock {
+        position: relative;
+        height: 221px;
+
+        
+
+        
+    }
+    .let-rock:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        display: block !important;
+        width: 100%;
+        background: linear-gradient(0deg, rgb(255 255 255) -10%, transparent 48%);
+        z-index: 9999;
+        left: 0;
+        height: 100%;
+    }
+    .t-rock {
+        text-align: center;
+        background: $accent-color;
+        margin: 0;
+        line-height: 1.2rem;
+        padding: 10px 0px 10px 0px;
+        color: $bg-light;
+
+    }
+    .button_div {
+        position: absolute;
+        bottom: 12px;
+        z-index: 999999;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+
+        
+    }
+    button.read_more {
+        background: $accent-color;
+        color: white;
+        padding: 7px 10px;
+        border-radius: 20px;
+        border: 0;
+        cursor: pointer;
+    }
+
+    .full_height{
+        height: auto;
+
+        .button_div{
+            display: none;
+        }
+        .read_less{
+            display: block !important;
+        }
+        
+    }
+    .let-rock.full_height:after{
+        content: unset;
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .live_items {
+    margin: 10px !important;
+  }
+  .live_update .p_3 {
+    padding: 0 0px;
+  }
+}

@@ -1,0 +1,52 @@
+@import "../../global.scss";
+
+.jodi_page{
+    padding: 15px;
+    .h2 {
+            text-align: center;
+            padding: 6px;
+            color: white;
+            border-radius: 0px;
+            background-color: $accent-color;
+            margin: 0;
+        }
+        .about_us, .faq_div {
+            border-radius: 15px;
+            overflow: hidden;
+            background: $bg-light;
+        }
+        .faq_div{
+            margin: 1.2rem 0;
+
+            .faq_title {
+                font-size: 1.1rem;
+            }
+            p{
+                    font-size: 1rem;
+                    margin: 0;
+            }
+        }
+    
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+thead{
+    background-color: $accent-color;
+    color: $bg-light;
+}
+th, td {
+    border: 1px solid rgba(128, 128, 128, 0.377);
+    padding: 8px;
+    text-align: center;
+}
+.table_data {
+    margin: 1.5rem 0px;
+    overflow: scroll;
+    max-width: 100%;
+    tbody td{
+        background-color: $bg-light ;
+        
+    }
+}

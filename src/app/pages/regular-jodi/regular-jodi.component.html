@@ -1,0 +1,67 @@
+<div class="jodi_page">
+    <div class="container">
+
+        <h1 style="text-align: center;">{{title}} JODI CHART</h1>
+        <div style="text-align: center;" [innerHTML]="pageDetails?.page_about"></div>
+
+        <div class="table_data">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td>Date</td>
+                        @for(d of daysArray; track d){
+                        <th style="text-transform: capitalize;">{{d.slice(0,3) }}</th>
+                        }
+                    </tr>
+                </thead>
+                <tbody>
+                    @for(week of orginzedDataArray ; track week){
+                    <tr>
+                        <td> {{ week.endDate }} <br>to <br> {{ week.startDate }} </td>
+                        <td>{{ getValueForDay(week, 'Monday') }}</td>
+                        <td>{{ getValueForDay(week, 'Tuesday') }}</td>
+                        <td>{{ getValueForDay(week, 'Wednesday') }}</td>
+                        <td>{{ getValueForDay(week, 'Thursday') }}</td>
+                        <td>{{ getValueForDay(week, 'Friday') }}</td>
+                        @if(daysArray.includes('saturday')){
+                        <td>{{ getValueForDay(week, 'Saturday') }}</td>
+                        }
+                        @if(daysArray.includes('sunday')){
+                        <td>{{ getValueForDay(week, 'Saturday') }}</td>
+                        }
+
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <div class="about_us">
+            <h2 class="h2">
+                Exploring Prabhat Satta Matka: A Popular Game of Chance
+            </h2>
+            <div style="padding: 13px;" [innerHTML]="pageDetails?.page_tips"></div>
+        </div>
+
+        <div class="faq_div">
+            <h2 class="h2">
+                FAQ's
+            </h2>
+            <mat-accordion>
+                @for(f of faqData; track f; let i = $index){
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <div class="faq_title">{{i+1}}. {{f.questions}}</div>
+                    </mat-expansion-panel-header>
+                    <p>{{f.answers}}</p>
+                </mat-expansion-panel>
+                @if (!$last) {
+                <mat-divider [inset]="true"></mat-divider>
+                }
+                <!-- <mat-divider></mat-divider> -->
+                }
+            </mat-accordion>
+        </div>
+        <div [innerHTML]="faqSchema"></div>
+    </div>
+</div>
